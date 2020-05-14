@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/teaching-aid/static/css/main.d4a92729.chunk.css",
+    "main.js": "/teaching-aid/static/js/main.28ee7122.chunk.js",
+    "main.js.map": "/teaching-aid/static/js/main.28ee7122.chunk.js.map",
+    "runtime-main.js": "/teaching-aid/static/js/runtime-main.6397e33b.js",
+    "runtime-main.js.map": "/teaching-aid/static/js/runtime-main.6397e33b.js.map",
+    "static/js/2.5310365c.chunk.js": "/teaching-aid/static/js/2.5310365c.chunk.js",
+    "static/js/2.5310365c.chunk.js.map": "/teaching-aid/static/js/2.5310365c.chunk.js.map",
+    "index.html": "/teaching-aid/index.html",
+    "precache-manifest.c3cff5329b90b937fffeb11f41b74b9e.js": "/teaching-aid/precache-manifest.c3cff5329b90b937fffeb11f41b74b9e.js",
+    "service-worker.js": "/teaching-aid/service-worker.js",
+    "static/css/main.d4a92729.chunk.css.map": "/teaching-aid/static/css/main.d4a92729.chunk.css.map",
+    "static/js/2.5310365c.chunk.js.LICENSE.txt": "/teaching-aid/static/js/2.5310365c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6397e33b.js",
+    "static/js/2.5310365c.chunk.js",
+    "static/css/main.d4a92729.chunk.css",
+    "static/js/main.28ee7122.chunk.js"
+  ]
+}
