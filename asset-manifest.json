@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/teaching-aid/static/css/main.d4a92729.chunk.css",
-    "main.js": "/teaching-aid/static/js/main.28ee7122.chunk.js",
-    "main.js.map": "/teaching-aid/static/js/main.28ee7122.chunk.js.map",
+    "main.css": "/teaching-aid/static/css/main.599b0392.chunk.css",
+    "main.js": "/teaching-aid/static/js/main.0212cd2a.chunk.js",
+    "main.js.map": "/teaching-aid/static/js/main.0212cd2a.chunk.js.map",
     "runtime-main.js": "/teaching-aid/static/js/runtime-main.6397e33b.js",
     "runtime-main.js.map": "/teaching-aid/static/js/runtime-main.6397e33b.js.map",
-    "static/js/2.5310365c.chunk.js": "/teaching-aid/static/js/2.5310365c.chunk.js",
-    "static/js/2.5310365c.chunk.js.map": "/teaching-aid/static/js/2.5310365c.chunk.js.map",
+    "static/js/2.cd11db5b.chunk.js": "/teaching-aid/static/js/2.cd11db5b.chunk.js",
+    "static/js/2.cd11db5b.chunk.js.map": "/teaching-aid/static/js/2.cd11db5b.chunk.js.map",
     "index.html": "/teaching-aid/index.html",
-    "precache-manifest.c3cff5329b90b937fffeb11f41b74b9e.js": "/teaching-aid/precache-manifest.c3cff5329b90b937fffeb11f41b74b9e.js",
+    "precache-manifest.b28d8387881b22feac9822be22606bc8.js": "/teaching-aid/precache-manifest.b28d8387881b22feac9822be22606bc8.js",
     "service-worker.js": "/teaching-aid/service-worker.js",
-    "static/css/main.d4a92729.chunk.css.map": "/teaching-aid/static/css/main.d4a92729.chunk.css.map",
-    "static/js/2.5310365c.chunk.js.LICENSE.txt": "/teaching-aid/static/js/2.5310365c.chunk.js.LICENSE.txt"
+    "static/css/main.599b0392.chunk.css.map": "/teaching-aid/static/css/main.599b0392.chunk.css.map",
+    "static/js/2.cd11db5b.chunk.js.LICENSE.txt": "/teaching-aid/static/js/2.cd11db5b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6397e33b.js",
-    "static/js/2.5310365c.chunk.js",
-    "static/css/main.d4a92729.chunk.css",
-    "static/js/main.28ee7122.chunk.js"
+    "static/js/2.cd11db5b.chunk.js",
+    "static/css/main.599b0392.chunk.css",
+    "static/js/main.0212cd2a.chunk.js"
   ]
 }
