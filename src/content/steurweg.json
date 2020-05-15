@@ -32,7 +32,9 @@
   "position": [1357, 1660],
   "text": "Kantoor",
   "content": [
-  ]
+    { "label": "Prototyping of games for STC (OVD, Rivor).pptx", "url": "https://docs.google.com/presentation/d/e/2PACX-1vRCAZYPfN7Zm7WWDgNB9iwOnzkc3UmSi_XGUycwq1e9ILvNVAufEYnA1pCJiQO_ZtqdvibPkGKjOL5p/pub?start=true&loop=false&delayms=3000"},
+    { "label": "21CC & Esports Rotterdam - ontwikkeling en banen voor jongeren in de logistiek.pdf", "url": "https://drive.google.com/open?id=19aPNFabc3j-bhwohPiYOgT555yzaikLJ"}
+ ]
 }, {
   "position": [1577, 2180],
   "text": "Buitengebied",
