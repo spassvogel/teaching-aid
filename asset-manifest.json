@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/teaching-aid/static/css/main.599b0392.chunk.css",
-    "main.js": "/teaching-aid/static/js/main.0212cd2a.chunk.js",
-    "main.js.map": "/teaching-aid/static/js/main.0212cd2a.chunk.js.map",
+    "main.js": "/teaching-aid/static/js/main.2b5e86ca.chunk.js",
+    "main.js.map": "/teaching-aid/static/js/main.2b5e86ca.chunk.js.map",
     "runtime-main.js": "/teaching-aid/static/js/runtime-main.6397e33b.js",
     "runtime-main.js.map": "/teaching-aid/static/js/runtime-main.6397e33b.js.map",
-    "static/js/2.cd11db5b.chunk.js": "/teaching-aid/static/js/2.cd11db5b.chunk.js",
-    "static/js/2.cd11db5b.chunk.js.map": "/teaching-aid/static/js/2.cd11db5b.chunk.js.map",
+    "static/js/2.5d382597.chunk.js": "/teaching-aid/static/js/2.5d382597.chunk.js",
+    "static/js/2.5d382597.chunk.js.map": "/teaching-aid/static/js/2.5d382597.chunk.js.map",
     "index.html": "/teaching-aid/index.html",
-    "precache-manifest.b28d8387881b22feac9822be22606bc8.js": "/teaching-aid/precache-manifest.b28d8387881b22feac9822be22606bc8.js",
+    "precache-manifest.733eb14f3acb2b046a075bfc366001e6.js": "/teaching-aid/precache-manifest.733eb14f3acb2b046a075bfc366001e6.js",
     "service-worker.js": "/teaching-aid/service-worker.js",
     "static/css/main.599b0392.chunk.css.map": "/teaching-aid/static/css/main.599b0392.chunk.css.map",
-    "static/js/2.cd11db5b.chunk.js.LICENSE.txt": "/teaching-aid/static/js/2.cd11db5b.chunk.js.LICENSE.txt"
+    "static/js/2.5d382597.chunk.js.LICENSE.txt": "/teaching-aid/static/js/2.5d382597.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6397e33b.js",
-    "static/js/2.cd11db5b.chunk.js",
+    "static/js/2.5d382597.chunk.js",
     "static/css/main.599b0392.chunk.css",
-    "static/js/main.0212cd2a.chunk.js"
+    "static/js/main.2b5e86ca.chunk.js"
   ]
 }
