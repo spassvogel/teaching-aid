@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import overview from './content/overview.json';
-import warehouse from './content/warehouse.json';
+import zalmweg from './content/zalmweg.json';
+import steurweg from './content/steurweg.json';
 import Overview from './components/Overview';
 import Warehouse from './components/Warehouse';
+import { ILabel } from './common/constants';
 
-enum map {
+export enum map {
   overview,
-  warehouse
+  zalmweg,
+  steurweg,
 }
 
 function App() {
@@ -32,8 +35,15 @@ function App() {
     };
   }, []);
 
-  const handleOverviewLabelClicked = () => {
-    setCurrentMap(map.warehouse);
+  const handleOverviewLabelClicked = (contentItem: ILabel) => {
+    switch(contentItem.target) {
+      case "zalmweg":
+        setCurrentMap(map.zalmweg);
+        break;
+      case "steurweg":
+        setCurrentMap(map.steurweg);
+        break;
+    }
   }
 
   const handleBackClicked = () => {
@@ -51,9 +61,20 @@ function App() {
           canvasHeight={canvasHeight}
         /> )
       }
-      { currentMap === map.warehouse && (
+      { currentMap === map.steurweg && (
         <Warehouse 
-          content={warehouse}
+          content={steurweg}
+          map={map.steurweg}
+          labelClicked={handleOverviewLabelClicked}
+          goBack={handleBackClicked}
+          canvasWidth={canvasWidth}
+          canvasHeight={canvasHeight}
+        /> )
+      }
+      { currentMap === map.zalmweg && (
+        <Warehouse 
+          content={zalmweg}
+          map={map.zalmweg}
           labelClicked={handleOverviewLabelClicked}
           goBack={handleBackClicked}
           canvasWidth={canvasWidth}

@@ -85,6 +85,7 @@ const Map = (props: Props) => {
       <Label
         key={label.text}
         text={label.text}
+        name={label.text}
         position={position}
         pointertap={() => handleLabelClick(label)}
         interactive={true}

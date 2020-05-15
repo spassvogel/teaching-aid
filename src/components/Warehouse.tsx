@@ -5,8 +5,10 @@ import { ILabel } from "../common/constants";
 import Map from "./Map";
 import './warehouse.css';
 import ContentModal from "./contentModal";
+import { map } from "../App";
 
 interface Props {
+  map: map,
   content: ILabel[];
   children?: React.ReactNode;
   canvasWidth: number;
@@ -46,13 +48,15 @@ const Warehouse = (props: Props) => {
   const handleClose = () => {
     setSelectedLabel(null);
   }
-
+  
+  const image = getImage(props.map);
+  
   return (
     <>
       <div className="button-home" onClick={props.goBack}/>
       <Map
         content={content}
-        image="images/map/zalmweg.png"
+        image={image}
         worldWidth={5487}
         worldHeight={2707}
         canvasWidth={canvasWidth}
@@ -72,3 +76,13 @@ const Warehouse = (props: Props) => {
 };
 
 export default Warehouse;
+
+const getImage = (thismap: map) => {
+  switch(thismap) {
+    case map.zalmweg:
+      return "images/map/zalmweg.png";
+    case map.steurweg:
+      default:
+      return "images/map/steurweg.png";
+  }
+}

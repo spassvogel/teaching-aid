@@ -1,15 +1,15 @@
 [{
   "position": [3560, 1400],
   "text": "Distributiecentrum (DC)",
-  "target": "warehouse" 
+  "target": "steurweg" 
 }, {
   "position": [4700, 1800],
   "text": "Productie",
-  "target": "warehouse" 
+  "target": "zalmweg" 
 }, {
   "position": [600, 1700],
   "text": "Goederenstroom",
-  "target": "warehouse" 
+  "target": "steurweg" 
 }]
 
 
