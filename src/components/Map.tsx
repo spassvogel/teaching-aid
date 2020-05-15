@@ -1,14 +1,10 @@
-import React, { useState, useRef, useEffect, useMemo } from "react";
+import React, { useRef, useEffect } from "react";
 import { Viewport as PixiViewport } from "pixi-viewport";
-import sound from 'pixi-sound';
-import Marker from "./pixi/Marker";
-import { Stage, Sprite, Text, Container, Graphics } from "@inlet/react-pixi";
-import ContentModal from "./contentModal";
+import { Stage, Sprite } from "@inlet/react-pixi";
 import Viewport from "./pixi/Viewport";
 import * as PIXI from 'pixi.js';
 import { PixiPlugin } from 'gsap/all';
 import { gsap } from 'gsap'
-import Conveyor from "./pixi/Conveyor";
 import Label from "./pixi/Label";
 import { ILabel } from "../common/constants";
 
@@ -82,7 +78,7 @@ const Map = (props: Props) => {
     props.labelClick(label, viewportRef.current!, backgroundRef.current!);
   }
 
-  const renderLabel = (label: ILabel, index: number) => {
+  const renderLabel = (label: ILabel) => {
     const position = new PIXI.Point(label.position[0], label.position[1]);
 
     return (
@@ -97,12 +93,12 @@ const Map = (props: Props) => {
   }
 
   return (
-      <Stage width={canvasWidth} height={canvasHeight} options={{transparent: true}} >
+    <Stage width={canvasWidth} height={canvasHeight} options={{transparent: true}} >
       <Viewport 
         screenWidth={canvasWidth} screenHeight={canvasHeight} worldWidth={worldWidth} worldHeight={worldHeight} ref={viewportRef} >
         <Sprite image={`${process.env.PUBLIC_URL}/${image}`} ref={backgroundRef} >
           {children}
-          {content.map((label, index) => renderLabel(label, index))}
+          {content.map((label, index) => renderLabel(label))}
         </Sprite>
       </Viewport>
     </Stage>
