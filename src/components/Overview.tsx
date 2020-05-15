@@ -32,7 +32,7 @@ const Overview = (props: Props) => {
     background.filters = [filter];
     gsap.to(filter, {
       duration: .8,
-      strength: .2
+      strength: .09
     });
     const localPos = new PIXI.Point(contentItem.position[0], contentItem.position[1] - 30);
     
@@ -48,8 +48,9 @@ const Overview = (props: Props) => {
         props.labelClicked(contentItem);
       }
     });
-
   }
+
+  console.log('overview')
 
   return ( 
     <Map

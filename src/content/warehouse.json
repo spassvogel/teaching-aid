@@ -1,0 +1,22 @@
+[{
+  "position": [1560, 1000],
+  "text": "Stellingen",
+  "content": [
+    { "label": "Over stellingen.pptx", "url": "https://docs.google.com/presentation/d/e/2PACX-1vSYN5W6YHGcyAqrDxPTh8_CQWAOYAAjOfG1Yfmry_ercJ1cbSzxC3RrSBdNk3cZ4o-b-2V3JtjBLNRV/pub?start=false&loop=false&delayms=3000"}, 
+    { "label": "Youtube", "url": "https://www.youtube.com/embed/a3X9OJd8-_M"} 
+  ]
+}, {
+  "position": [2700, 1100],
+  "text": "Overig",
+  "content": [
+    { "label": "Warehouse management.pdf", "url": "https://www.veeqo.com/wp-content/uploads/2018/04/Warehouse-Management-PDF.pdf"} 
+  ]
+}, {
+  "position": [1600, 700],
+  "text": "Expeditie",
+  "content": [
+    { "label": "youtube", "url": "https://www.youtube.com/embed/iWKu6WNFf9M"} 
+  ]
+}]
+
+

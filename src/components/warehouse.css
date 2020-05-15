@@ -1,0 +1,10 @@
+.button-home {
+  background: url("/teaching-aid/images/ui/home.png");
+  background-size: auto;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-size: contain;
+}

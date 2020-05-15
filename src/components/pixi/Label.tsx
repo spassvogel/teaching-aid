@@ -51,6 +51,7 @@ const Label = React.forwardRef<PIXI.Container, Props & React.ComponentProps<type
   return (
     <Container 
       interactive
+      buttonMode
       anchor={[0.5, 1]}
       ref={ref}
       {...props}

@@ -49,8 +49,14 @@ const Map = (props: Props) => {
     // Center the map
     if (viewportRef.current) {
       const viewport = viewportRef.current;
-      viewport.moveCenter(worldWidth / 2, worldHeight / 2);  
-      viewport.scale = new PIXI.Point(0.5, 0.5);
+      viewport.resize(canvasWidth, canvasHeight, worldWidth, worldHeight);
+      viewport.scale = new PIXI.Point(.5, .5);
+      viewport.moveCenter(worldWidth / 2, worldHeight / 2);
+
+
+      return () => {
+        // tween.kill(viewport);
+      }
     }
   }, [canvasWidth, canvasHeight, worldWidth, worldHeight]);
 
@@ -80,7 +86,8 @@ const Map = (props: Props) => {
     const position = new PIXI.Point(label.position[0], label.position[1]);
 
     return (
-      <Label 
+      <Label
+        key={label.text}
         text={label.text}
         position={position}
         pointertap={() => handleLabelClick(label)}

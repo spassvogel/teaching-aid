@@ -1,18 +1,9 @@
-import React, { useRef, useEffect, useState } from 'react';
-import * as PIXI from 'pixi.js';
-import { Stage, Sprite } from '@inlet/react-pixi';
-import Viewport from './components/pixi/Viewport';
-import { Viewport as PixiViewport } from "pixi-viewport";
-import Marker from './components/pixi/Marker';
-import { PixiPlugin } from 'gsap/all';
+import React, { useEffect, useState } from 'react';
 import './App.css';
-import ParticleEmitter from './components/pixi/ParticleEmitter';
-import content from './content/content.json';
-import ContentModal from './components/contentModal';
+import overview from './content/overview.json';
+import warehouse from './content/warehouse.json';
 import Overview from './components/Overview';
-import IntroModal from './components/introModal/introModal';
-import Map from './components/Map';
-import { ILabel } from './common/constants';
+import Warehouse from './components/Warehouse';
 
 enum map {
   overview,
@@ -21,10 +12,7 @@ enum map {
 
 function App() {
 
-
-  const [intro, setIntro] = useState(true);
   const [currentMap, setCurrentMap] = useState(map.overview);
-
   const [canvasWidth, setCanvasWidth] = useState(1200);
   const [canvasHeight, setCanvasHeight] = useState(600);
 
@@ -44,8 +32,12 @@ function App() {
     };
   }, []);
 
-  const handleOverviewLabelClicked = (content: ILabel) => {
+  const handleOverviewLabelClicked = () => {
     setCurrentMap(map.warehouse);
+  }
+
+  const handleBackClicked = () => {
+    setCurrentMap(map.overview);
   }
 
   return (
@@ -53,8 +45,17 @@ function App() {
       {/* { intro && (<IntroModal selectedAvatar={avatar} onClose={() => {setIntro(false)}} onChangeAvatar={setAvatar}/>)} */}
       { currentMap === map.overview && (
         <Overview 
-          content={content}
+          content={overview}
           labelClicked={handleOverviewLabelClicked}
+          canvasWidth={canvasWidth}
+          canvasHeight={canvasHeight}
+        /> )
+      }
+      { currentMap === map.warehouse && (
+        <Warehouse 
+          content={warehouse}
+          labelClicked={handleOverviewLabelClicked}
+          goBack={handleBackClicked}
           canvasWidth={canvasWidth}
           canvasHeight={canvasHeight}
         /> )

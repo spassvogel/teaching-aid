@@ -2,6 +2,7 @@
 export interface ILabel {
   position: number[],
   text: string;
-  target: string;
+  target?: string;
+  content?: { label: string, url: string}[];
 }
 
